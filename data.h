@@ -3,11 +3,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <conio.h>
-#include<ctime>
+#include <ctime>
 #include <windows.h>
 #include <iomanip>
 
-#define START 90 // ½ÃÀÛÁ¡
+#define START 90 // ì‹œì‘ì 
 #define PERSTART 50
 #define DATE 11
 #define STARTMONEY 5000
@@ -16,13 +16,13 @@ using namespace std;
 
 class Datas {
 private:
-	int per; //È®·ü
-	int	updown; //ÁÖ°¡Áõ°¨
-	int	price[DATE]; //¿ª´ëÁÖ°¡
+	int per; //í™•ë¥ 
+	int updown; //ì£¼ê°€ì¦ê°
+	int price[DATE]; //ì—­ëŒ€ì£¼ê°€
 
-	int money; //ÀÚ±İ
-	int stock; //¼ÒÁö ÁÖ
-	int total; //ÃÑ Àç»ê
+	int money; //ìê¸ˆ
+	int stock; //ì†Œì§€ ì£¼
+	int total; //ì´ ì¬ì‚°
 
 	int day;
 public:
