@@ -1,6 +1,7 @@
 Stock_GAME
 =============
-* A game where the player with the most money at the end wins, based on predicting a graph using stock data.
+* A game where the player with the most money at the end wins, based on predicting a graph using stock data.   
+
 <img src="/main.png" width="50%" height="40%" title="px(픽셀) 크기 설정" alt="main"></img></br>
 
 ## Function   
