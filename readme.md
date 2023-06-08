@@ -1,6 +1,6 @@
 Stock_GAME
 =============
-A game where the player with the most money at the end wins, based on predicting a graph using stock data.
+* A game where the player with the most money at the end wins, based on predicting a graph using stock data.
 <img src="/main.png" width="50%" height="40%" title="px(픽셀) 크기 설정" alt="main"></img></br>
 
 ## Function   
@@ -9,14 +9,14 @@ A game where the player with the most money at the end wins, based on predicting
 > Calculating the final winner based on the sum of stock holdings and cash balance at the end.
 
 ## Img  
-Data initialization: Declare variables such as player, buy[], key, including the data.h header file, and initialize the array of structures Datas dt[5].
+* Data initialization: Declare variables such as player, buy[], key, including the data.h header file, and initialize the array of structures Datas dt[5].
 ```C++
 #include "data.h"
 
 int player = 1, buy[5], key = 0;
 Datas dt[5]; // dt[0] = �ý���, dt[1] = p1, dt[2] = p2, dt[3] = p3, dt[4] = p4
 ```
-Entry point (main): Initialize player data for dt[1] to dt[4], set the stock price for dt[0], and set the growth rate for dt[0].
+* Entry point (main): Initialize player data for dt[1] to dt[4], set the stock price for dt[0], and set the growth rate for dt[0].
 ```C++
 int main()
 {
@@ -33,7 +33,7 @@ int main()
 <img src="/start.png" width="50%" height="40%" title="px(픽셀) 크기 설정" alt="setting"></img></br>
 
 
-Update player data: Call the playerdata() function to update the player's funds and stocks, and reset the trading volume.
+* Update player data: Call the playerdata() function to update the player's funds and stocks, and reset the trading volume.
 ```C++
 void playerdata() //유저 정보 저장
 {
@@ -49,7 +49,7 @@ void playerdata() //유저 정보 저장
 <img src="/change.png" width="50%" height="40%" title="px(픽셀) 크기 설정" alt="shadow"></img></br>
 
 
-Stock price adjustment: Call the Rand_Graph() function to randomly increase or decrease the stock price.
+* Stock price adjustment: Call the Rand_Graph() function to randomly increase or decrease the stock price.
 ```C++
 void Rand_Graph()// 주식 랜덤 함수
 {
@@ -91,7 +91,7 @@ void Rand_Graph()// 주식 랜덤 함수
 ```
 
 
-Game end and result output: The game will end after 10 days. Call the final() function to check the final results, and call the gameover() function to print the results.
+* Game end and result output: The game will end after 10 days. Call the final() function to check the final results, and call the gameover() function to print the results.
 ```C++
 int final() //최종경과 계산 함수
 {
